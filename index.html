@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Watch Infinity Job Shortlist's narrated working demonstration: real job searches, two IBM agents, financial evidence, and IBM Bob.">
+  <title>Infinity Job Shortlist Â· Working demo</title>
+  <style>
+    :root{color-scheme:light;--ink:#241638;--purple:#7136db;--lime:#c4f476}
+    *{box-sizing:border-box}body{margin:0;background:#f4f1fa;color:var(--ink);font:17px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+    header,main,footer{width:min(1160px,94%);margin:auto}header{padding:28px 0;display:flex;justify-content:space-between;gap:20px;align-items:center}
+    .brand{font-size:21px;font-weight:800;letter-spacing:.02em}.brand span{color:var(--purple);font-size:31px;vertical-align:-2px;margin-right:9px}
+    a{color:#5720ad;text-underline-offset:4px}header a{font-size:15px;font-weight:650}.intro{padding:14px 0 24px}.eyebrow{color:#665575;font-size:14px;font-weight:750;text-transform:uppercase;letter-spacing:.12em}
+    h1{font-size:clamp(29px,4.8vw,48px);line-height:1.14;letter-spacing:-.04em;margin:12px 0 15px}p{margin:0}.intro p{max-width:760px;color:#62536f}
+    .player{background:#21133d;border:1px solid #d8ccea;border-radius:18px;overflow:hidden;box-shadow:0 16px 50px #3a195315}
+    video{display:block;width:100%;aspect-ratio:16/9;background:#21133d}.player-note{padding:13px 19px;color:#ece4f6;font-size:14px}
+    .links{display:flex;gap:14px;flex-wrap:wrap;margin:24px 0}.button{padding:11px 18px;border-radius:11px;background:var(--purple);color:white;font-weight:700;text-decoration:none}.button.secondary{background:white;color:#51209d;border:1px solid #d8ccea}
+    .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:8px 0 28px}.fact{border-top:2px solid #daceec;padding-top:14px}.fact strong{display:block;margin-bottom:4px}.fact p{font-size:15px;color:#62536f}
+    details{padding:20px;background:white;border:1px solid #e0d7eb;border-radius:13px;margin-bottom:25px}summary{cursor:pointer;font-weight:650}.transcript{margin-top:14px;max-width:900px}.transcript p{margin:12px 0;color:#62536f;font-size:15px}
+    footer{padding:15px 0 35px;font-size:13px;color:#72647f}a:focus-visible,summary:focus-visible{outline:3px solid var(--purple);outline-offset:5px}
+    @media(max-width:620px){header{align-items:flex-start}.brand{font-size:17px}header a{font-size:13px}.facts{grid-template-columns:1fr;gap:12px}.intro{padding-top:4px}}
+  </style>
+</head>
+<body>
+  <header><div class="brand"><span>âˆž</span>INFINITY JOB SHORTLIST</div><a href="https://github.com/Ztexam/Infinity_Project">Project &amp; source code â†—</a></header>
+  <main>
+    <section class="intro"><div class="eyebrow">Working demonstration Â· 2 minutes 29 seconds</div><h1>Find the role.<br>Understand the employer.</h1><p>Watch the actual app connect job matching with company financial evidence, two collaborating IBM agents, and clear source links.</p></section>
+    <section class="player" aria-label="Submission video">
+      <video controls playsinline preload="metadata" poster="video-poster.jpg" aria-label="Infinity Project narrated working demonstration">
+        <source src="Infinity_Project_Submission_Ava.mp4" type="video/mp4">
+        <track kind="captions" src="Infinity_Project_Submission_Ava.vtt" srclang="en" label="English captions">
+        Your browser does not support this video. <a href="Infinity_Project_Submission_Ava.mp4">Download the MP4</a>.
+      </video>
+      <p class="player-note">Ava narration Â· English captions Â· Actual app and agent footage</p>
+    </section>
+    <div class="links"><a class="button" href="Infinity_Project_Submission_Ava.mp4" download>Download video</a><a class="button secondary" href="https://github.com/Ztexam/Infinity_Project">Explore the project</a></div>
+    <section class="facts" aria-label="What the demo shows">
+      <div class="fact"><strong>Search across the US</strong><p>Keywords, location filters, employer links, and visible data freshness.</p></div>
+      <div class="fact"><strong>Two real IBM agents</strong><p>The shortlist agent calls its company-assessment collaborator and explains the results.</p></div>
+      <div class="fact"><strong>Built with IBM Bob</strong><p>The original completed frontend and API integration task is shown with its recorded usage.</p></div>
+    </section>
+    <details><summary>Recording notes and transcript</summary><div class="transcript"><p>The cached repeat search is labeled, and collection waits are shortened. The embedded IBM agent run is real. The Bob section shows an existing completed task reopened for review. Financial scores are provisional research aids.</p><p>A matching job title is only part of a job search. Infinity Job Shortlist connects role matching with company financial evidence, helping technology and H R systems jobseekers decide where to look next.</p><p>Here is our actual I B M Bob project task. Bob created the first live shortlist page and connected it to the Python service. The completed task and its usage are preserved in our public repository. Later improvements expanded the search and connected the deployed agents.</p><p>In the working app, enter H R I S and Python. Choose a city, a state, or all fifty states. Focus and experience filters help narrow the search. Quick search reuses recent evidence, while this option requests a fresh check of employer boards.</p><p>Python checks seventy two employer boards and free keyword discovery, normalizes the listings, and retrieves financial evidence. Bounded parallel requests and caches reduce repeated work. Collection dates, source failures, and cached results remain visible. A first search can take longer than a repeat search.</p><p>Now the embedded I B M chat reviews the prepared evidence. Infinity Job Shortlist calls its collaborator, Infinity Company Assessment, with the company financial fields. The assessment agent explains the supplied score and eligibility. The shortlist agent then brings the assessments back into the job recommendations. Short lived signed tokens connect the app without entering an I B M A P I key in the browser.</p><p>Review up to ten distinct openings, with financial scores and direct employer links. Our provisional rubric weights cash flow at fifty percent, growth at thirty percent, and research spending at twenty percent. Eligibility requires a score above five and positive operating cash flow. Comparable six month reports can qualify too.</p><p>Open the employer&#x27;s posting and the original financial report to check the evidence yourself. Missing evidence is marked unassessed. The score is a research aid, not a guarantee of stability. The candidate decides whether to apply; the app does not submit applications.</p><p>One workflow connects job fit, financial context, and sources. The code, setup instructions, Bob evidence, and dated tests are available in our public Infinity Project repository.</p></div></details>
+  </main>
+  <footer>Infinity Project Â· IBM SkillsBuild AI Experiential Learning Lab Â· Recorded November 20, 2026. The demo runs the app locally and both runtime agents on IBM.</footer>
+</body>
+</html>
