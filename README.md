@@ -4,7 +4,7 @@ Infinity Job Shortlist connects live US job matching with explainable employer f
 
 ## Watch the working demo
 
-**[Watch the narrated submission video (2 minutes 29 seconds)](https://raw.githubusercontent.com/Ztexam/Infinity_Project/main/Infinity_Project_Submission_Ava.mp4)** · [Video file](Infinity_Project_Submission_Ava.mp4) · [Captions](Infinity_Project_Submission_Ava.srt)
+**[Watch the narrated submission video (2 minutes 29 seconds)](https://drive.google.com/file/d/1HhEZNXdIx21ZKaP_SHShqBFZCKgikB7Z/view?usp=sharing)** · [Video file](Infinity_Project_Submission_Ava.mp4) · [Captions](Infinity_Project_Submission_Ava.srt)
 
 Microsoft Ava narrates the actual app, the verified two-agent collaborator call, job and financial-source links, and the original completed IBM Bob task. Collection waits are shortened and the cached repeat search is labeled. See [VIDEO_NOTES.txt](VIDEO_NOTES.txt) for the recording details.
 
