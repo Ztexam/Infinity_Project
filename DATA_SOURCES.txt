@@ -1,0 +1,31 @@
+Infinity Job Shortlist public source inventory
+
+1. Greenhouse employer job boards and public Job Board API
+   https://developers.greenhouse.io/job-board.html
+   API host: boards-api.greenhouse.io
+   Employer-specific URLs are in data/companies.json and service/additional_employers.json.
+
+2. Lever employer job boards and public Postings API
+   https://github.com/lever/postings-api
+   API host: api.lever.co
+   Employer-specific URLs are in service/additional_employers.json.
+
+3. SEC EDGAR Company Facts and company submissions
+   https://www.sec.gov/search-filings/edgar-application-programming-interfaces
+   Hosts: data.sec.gov and www.sec.gov
+   Identified User-Agent and conservative request pacing are required. The operator supplies their own contact privately; no project contact email is bundled publicly.
+
+4. VeritaHire keyword/location discovery
+   https://veritahire.com/
+   Public endpoint used by the POC: https://veritahire.com/api/jobs-search.php
+   Discovery results include their originating employer application links. Public access has been observed; an unrestricted redistribution/commercial-use license has not been established.
+
+5. HKEX / GenScript six-month financial report
+   https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0916/2026091600223.pdf
+   The configured adapter uses reported numeric facts and records the reporting period and source URL. No PDF is bundled in this public repository.
+
+Publication scope
+- No LinkedIn, Glassdoor, Blind, other social-media data, private HR records, or employee reviews are included.
+- The public code bundle omits the description_excerpt text from historical job snapshots. It retains factual metadata, skill tags, source URLs, numeric financial evidence, and dated QA.
+- Original development snapshots are preserved locally. Runtime caches and collected full responses are excluded.
+- Free unauthenticated access does not establish an open-content license or permission for every downstream use. Review provider and employer terms before operating, redistributing collected text, or offering a commercial service. This inventory does not claim that such a review has cleared every source.

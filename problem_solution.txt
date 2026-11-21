@@ -1,0 +1,15 @@
+Infinity Job Shortlist: connect job fit with company financial evidence
+
+Jobseekers can find a role that matches their skills without understanding the financial position of the employer behind it. Checking job boards and financial reports separately takes time, and the information is difficult to compare. Our challenge is to bring those two decisions into one understandable workflow.
+
+Infinity Job Shortlist is a working proof of concept for US technology and HR systems jobseekers. A candidate enters keywords such as HRIS and Python and selects a city, state, or nationwide search. A Python service retrieves public job listings and financial evidence, then supplies two deployed agents in IBM watsonx Orchestrate.
+
+Agent 1, Infinity Job Shortlist, receives matching openings and sends complete company financial evidence to Agent 2, Infinity Company Assessment. Agent 2 explains each company's cash flow, revenue growth, research and development spending, reporting period, and financial score. Agent 1 uses that assessment to explain up to ten eligible openings, with direct application and financial-report links. Several jobs at one employer remain separate opportunities.
+
+The provisional financial rubric favors stability: 50% cash flow, 30% revenue growth, and 20% R&D. Eligibility requires a score strictly above 5 out of 10 and positive operating cash flow for the reported period. Comparable six-month reports are accepted; reporting frequency alone does not disqualify an employer. Missing financial evidence is shown as unassessed rather than treated as proof of poor finances.
+
+The current collector covers 72 employer boards plus keyword-based discovery, with location filtering across all 50 states. Concurrent collection, rate limits, and caches reduce repeated requests. The interface distinguishes current collection, cached evidence, and source failures. IBM Bob contributed the live frontend and API integration; watsonx Orchestrate runs the two collaborating agents inside the app.
+
+A recorded nationwide HRIS/Python test checked all 72 boards and found 856 matching openings across 96 employers. After a handoff correction, the agents returned ten application links and ten report links in the app's expected order, including an eligible employer with six-month evidence. These are dated POC observations, not promises about future results.
+
+The project combines role matching, explainable financial context, and source links in one candidate workflow. It does not guarantee employment or employer stability, fabricate employee reviews, or submit applications. Users review the evidence and decide where to apply.

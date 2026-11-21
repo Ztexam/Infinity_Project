@@ -1,0 +1,19 @@
+IBM Bob
+
+IBM Bob IDE was used in the IBMSkills-AIProject workspace to implement the live shortlist frontend and its connection to the existing Python API. The completed task requested frontend/live.html, a GET /live route in service/app.py, source-status and refresh controls, search-result explanations and safe links, and clear distinctions between cached data and actual agent execution. The saved task screenshot shows the completed task and two changed files. The task was reopened on November 20 in ibm-skillsbuild-ell without starting another AI task. The expanded task header, workspace, and visible 1.07 usage are captured in bob_sessions/2026-11-20-task-summary.jpg alongside the original completed-task screenshot.
+
+IBM watsonx Orchestrate
+
+Two actual agents are deployed in the existing watsonx-Hackathon Orchestrate instance in Frankfurt: Infinity Job Shortlist and Infinity Company Assessment, both version 1.1.0. The lead agent calls the assessment agent as a collaborator. The Python app passes complete job and financial evidence; the assessment agent explains the supplied deterministic scores, reporting periods, eligibility, and report links; the lead returns the explained shortlist. Recorded live traces include the collaborator call, and dated QA records document the nationwide and six-month-report tests.
+
+The app embeds IBM's live chat. A server-held RSA signing key issues short-lived signed chat tokens, so users do not paste an IBM API key into the browser. This still requires authorized access to the IBM instance, registered signing keys, an allowed origin, and an available service allowance. It is not anonymous or guaranteed-free IBM inference. The deployed agents use the existing GPT-OSS 120B model via Groq within Orchestrate; this submission does not claim use of Granite.
+
+Python and public data
+
+Python collects Greenhouse and Lever employer feeds, keyword/location discovery through VeritaHire, SEC Company Facts and filing evidence, and a verified HKEX six-month report. It normalizes, deduplicates, caches, and timestamps evidence. The numerical rubric and eligibility gate run in Python; language models explain supplied evidence. Concurrent requests use bounded worker pools and source throttling. Job/discovery caches last 15 minutes and financial caches last 24 hours. Users can request source refreshes and see partial failures.
+
+The frontend and Python service currently run locally through a portable Python/Waitress launcher. The two runtime agents are hosted on IBM. A full IBM-hosted Python deployment has not been completed. The code-only public distribution excludes signing keys, encrypted personal connection backups, passwords, local tokens, and caches. Reusing the private IBM connection requires a separately authorized, encrypted transfer or a new instance configuration.
+
+Validation and limits
+
+The existing local suite has 36 passing tests, with the original snapshot/scoring check passing. Recorded live IBM tests verify collaboration, ten exact job/report links, and acceptance of six-month evidence. Windows relocation was tested; native macOS/Linux and Docker execution remain unverified. Public availability does not by itself establish permission to redistribute job content; source-use terms need a documented review. Financial scores are provisional research aids, not probabilities or assurances of employer stability.
