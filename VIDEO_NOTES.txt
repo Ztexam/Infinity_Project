@@ -1,0 +1,33 @@
+Infinity Job Shortlist - submission screen demonstration
+Recorded November 20, 2026 (Pacific time)
+
+Voice: Microsoft en-US-AvaNeural, +2% speaking rate.
+Duration: approximately 2 minutes 29 seconds; H.264/AAC MP4, 1280x720.
+Captions: burned into the video; separate SRT supplied.
+
+The video contains actual browser captures of the local app, the deployed IBM
+agent response and collaborator tool trace, an employer job page, and an SEC
+filing. Browser interactions were sampled at 5 fps and exported at 24 fps.
+Opening and closing graphics are animated. The Bob section shows three real
+views of the original completed task, reopened for review; it does not claim a
+new Bob generation was performed during recording. Visible task usage: 1.07.
+
+The five app/source sections total 104.2 seconds. Collection waits are shortened.
+The recording uses a clearly labeled cached repeat search from the November 20
+collection. It does not claim every displayed listing was freshly fetched during
+the video. The later embedded IBM agent execution is real, not a fixture replay.
+
+Verified run: HRIS and Python, United States. Prepared evidence contained 845
+matching openings across 88 employers. The deployed lead agent returned ten job
+links and ten report links; its expanded trace showed the assessment collaborator.
+The response identified rejected companies and accepted six-month GenScript data.
+The provisional score is calculated by Python; agents explain supplied evidence.
+
+The frontend and Python service run locally. Both runtime agents are hosted in
+IBM watsonx Orchestrate. No IBM API key was entered into the app or published.
+The IBM signing keys remain private; the allowed local origin was narrowly
+extended to port 8765 because Windows reserved port 8080 on the recording PC.
+
+The public source archive and bob_sessions screenshots are in this repository.
+The personal portable ZIP, signing keys, tokens, transfer password, and private
+configuration are excluded from the public deliverables.

@@ -2,12 +2,20 @@
 
 Infinity Job Shortlist connects live US job matching with explainable employer financial evidence. A candidate searches keywords and locations; two deployed IBM watsonx Orchestrate agents collaborate to return up to ten eligible openings with scores, explanations, and direct job/report links.
 
+## Watch the working demo
+
+**[Watch the narrated submission video (2 minutes 29 seconds)](https://raw.githubusercontent.com/Ztexam/Infinity_Project/main/Infinity_Project_Submission_Ava.mp4)** · [Video file](Infinity_Project_Submission_Ava.mp4) · [Captions](Infinity_Project_Submission_Ava.srt)
+
+Microsoft Ava narrates the actual app, the verified two-agent collaborator call, job and financial-source links, and the original completed IBM Bob task. Collection waits are shortened and the cached repeat search is labeled. See [VIDEO_NOTES.txt](VIDEO_NOTES.txt) for the recording details.
+
 ## Download and run the working source
 
 1. Download **[Infinity_Project_Submission_Source.zip](Infinity_Project_Submission_Source.zip)** using GitHub's download button on that file's page.
 2. Extract that source ZIP to a writable folder. It contains the complete Python service, frontend, tests, data metadata, agent instructions, setup documentation, and dated QA records in their required directory structure.
 3. Install **Python 3.11+**. On Windows, double-click **Start Shortlist.cmd** in the extracted source folder. On macOS/Linux, run `sh start.sh`.
 4. Open **http://localhost:8080/live**. The first launch installs pinned dependencies. Keep the launcher running.
+
+If Windows reserves port 8080, launch with `.portable-venv\Scripts\python.exe -m portable run --port 8765` and use **http://localhost:8765/live**. The IBM instance must allow the exact origin used. The lab owner's recording setup now allows both local ports; another instance needs its own configuration.
 
 If you download this entire repository as a ZIP, extract it first, then extract the nested **Infinity_Project_Submission_Source.zip** before launching.
 
@@ -40,6 +48,6 @@ The frontend/Python service runs locally; the two runtime agents are hosted on I
 - [Data-source inventory](DATA_SOURCES.txt)
 - Full setup, code, tests, agent change record, and QA: **Infinity_Project_Submission_Source.zip**
 
-The narrated submission screen demonstration is being prepared. The existing Ava animation is an explainer and does not by itself satisfy the portal's on-screen-demo requirement. No official AI advisor precheck has run yet.
+The November 20 recording run used cached HRIS/Python nationwide evidence with 845 matching openings across 88 companies. The signed embedded chat returned ten openings and report links, confirmed rejected companies, and accepted GenScript's six-month report. The expanded tool trace verified `chat_with_collaborator_infinity_company_assessment`. The older animated explainer is separate from this working-screen demonstration. Official advisor status is recorded separately after submission.
 
 This public package omits historical job-description excerpts and all private connection material. Free public access is not an unrestricted content license; provider/employer terms need review before redistribution or commercial operation. No employee reviews are fabricated and no applications are submitted.
